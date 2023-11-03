@@ -148,7 +148,7 @@ namespace PublishPackageToNuGet2017.Command
                 projModel.Owners = projModel.PackageInfo?.Owners ?? new List<string> { settingInfo.Authour };
                 var des = MakeupDesc(projModel.PackageInfo?.Description, projModel.ProjectPath);  //读取git 结合基础信息
                 projModel.Desc = des;
-                projModel.Version = GetAssemblyVersion(projModel.LibDebugPath + "\\" + projModel.LibName + ".dll") ?? (projModel.PackageInfo?.Version?.Version.ToString(4));
+                projModel.Version = !string.IsNullOrEmpty(GetAssemblyVersion(projModel.LibDebugPath + "\\" + projModel.LibName + ".dll")) ? GetAssemblyVersion(projModel.LibDebugPath + "\\" + projModel.LibName + ".dll"):(projModel.PackageInfo?.Version?.Version.ToString(4));
 
                 // 判断包是否有依赖项组，若没有则根据当前项目情况自动添加
                 List<PackageDependencyGroup> groupsTmp = projModel.PackageInfo.DependencyGroups.ToList();
@@ -195,8 +195,12 @@ namespace PublishPackageToNuGet2017.Command
         {
             if (!string.IsNullOrEmpty(dllPath) && File.Exists(dllPath))
             {
-                Assembly assembly = Assembly.LoadFrom(dllPath);
-                return assembly.GetName().Version.ToString();
+                string version = null;
+                byte[] fileData = File.ReadAllBytes(dllPath);
+                Assembly assembly = Assembly.Load(fileData);
+                 version=  assembly.GetName().Version.ToString();
+              //  assembly = null;
+                return version;
             }
             else
             {

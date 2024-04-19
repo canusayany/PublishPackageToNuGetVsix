@@ -23,6 +23,7 @@ namespace PublishPackageToNuGet2017.Model
 
         public ManifestMetadata PackageInfo { get; set; }
 
+
         public string NetFrameworkVersion { get; set; }
 
         public List<string> NetFrameworkVersionList { get; set; }

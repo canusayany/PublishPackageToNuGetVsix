@@ -180,7 +180,7 @@ namespace PublishPackageToNuGet2017.Command
                     }
                     catch (Exception exception)
                     {
-                        MessageBox.Show(exception.Message);
+                        MessageBox.Show($"推送到{settingInfo.DefaultPackageSource}失败,错误信息:{exception.Message},{exception.InnerException},{exception.StackTrace}" );
                     }
                 };
 

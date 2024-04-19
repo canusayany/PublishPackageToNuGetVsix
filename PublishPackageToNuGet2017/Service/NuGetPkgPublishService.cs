@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
+using System.Windows.Forms;
 using IAsyncServiceProvider = Microsoft.VisualStudio.Shell.IAsyncServiceProvider;
 
 namespace PublishPackageToNuGet2017.Service
@@ -442,13 +443,18 @@ namespace PublishPackageToNuGet2017.Service
                 PackageUpdateResource packageUpdateResource = GetPackageUpdateResource(publishUrl);
                 //var p = packageUpdateResource.Push(filePath, "", 100, false, _ => publishKey, null, false, NullLogger.Instance);
                 //System.Runtime.CompilerServices.TaskAwaiter pp = p.GetAwaiter();
-               // pp.GetResult();
+                // pp.GetResult();
                 ThreadHelper.JoinableTaskFactory.Run(() => packageUpdateResource.Push(filePath, null, 999, false, s => publishKey, s => publishKey, true, NullLogger.Instance));
                 // ThreadHelper.JoinableTaskFactory.Run(() => updateResource.Push(filePath, null, 999, false, s => publishKey, s => publishKey, true, NullLogger.Instance));
                 return true;
             }
             catch (Exception e)
-            {
+            { // 打印出更多的错误信息
+                MessageBox.Show($"Error pushing to NuGet server: {e.Message}" + $"Stack trace: {e.StackTrace}");
+                if (e.InnerException != null)
+                {
+                    MessageBox.Show($"Inner exception: {e.InnerException.Message}" + $"Inner exception stack trace: {e.InnerException.StackTrace}");
+                }
                 throw e;
             }
         }

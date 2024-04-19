@@ -22,6 +22,8 @@ using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 using IAsyncServiceProvider = Microsoft.VisualStudio.Shell.IAsyncServiceProvider;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace PublishPackageToNuGet2017.Service
 {
@@ -440,12 +442,17 @@ namespace PublishPackageToNuGet2017.Service
             var updateResource = ThreadHelper.JoinableTaskFactory.Run(() => repository.GetResourceAsync<PackageUpdateResource>());
             try
             {
-                PackageUpdateResource packageUpdateResource = GetPackageUpdateResource(publishUrl);
-                //var p = packageUpdateResource.Push(filePath, "", 100, false, _ => publishKey, null, false, NullLogger.Instance);
-                //System.Runtime.CompilerServices.TaskAwaiter pp = p.GetAwaiter();
-                // pp.GetResult();
-                ThreadHelper.JoinableTaskFactory.Run(() => packageUpdateResource.Push(filePath, null, 999, false, s => publishKey, s => publishKey, true, NullLogger.Instance));
-                // ThreadHelper.JoinableTaskFactory.Run(() => updateResource.Push(filePath, null, 999, false, s => publishKey, s => publishKey, true, NullLogger.Instance));
+
+
+           
+              //  var packageUpdateResource = GetPackageUpdateResource(publishUrl);
+                ThreadHelper.JoinableTaskFactory.Run(() => PushNuGetPackage(filePath, publishKey, publishUrl));
+                //PackageUpdateResource packageUpdateResource = GetPackageUpdateResource(publishUrl);
+                ////var p = packageUpdateResource.Push(filePath, "", 100, false, _ => publishKey, null, false, NullLogger.Instance);
+                ////System.Runtime.CompilerServices.TaskAwaiter pp = p.GetAwaiter();
+                //// pp.GetResult();
+               // ThreadHelper.JoinableTaskFactory.Run(() => packageUpdateResource.Push(filePath, null, 999, false, s => publishKey, s => publishKey, true, NullLogger.Instance));
+                //// ThreadHelper.JoinableTaskFactory.Run(() => updateResource.Push(filePath, null, 999, false, s => publishKey, s => publishKey, true, NullLogger.Instance));
                 return true;
             }
             catch (Exception e)
@@ -457,6 +464,27 @@ namespace PublishPackageToNuGet2017.Service
                 }
                 throw e;
             }
+        }
+        public static async System.Threading.Tasks.Task PushNuGetPackage(string packagePath, string apiKey, string source)
+        {
+             await System.Threading.Tasks.Task.Run(() =>
+            {
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.FileName = "dotnet";
+                process.StartInfo.Arguments = $"nuget push {packagePath}  -k {apiKey} -s {source}";
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.RedirectStandardOutput = true;
+                //不显示cmd对话框
+                process.StartInfo.CreateNoWindow = true;
+                process.Start();
+                string output = process.StandardOutput.ReadToEnd();
+                process.WaitForExit();
+                if (process.ExitCode != 0)
+                {
+                    throw new Exception($"Failed to push NuGet package. Output: {output}");
+                }
+            });
+           
         }
         static PackageUpdateResource GetPackageUpdateResource(string serverUrl)
         {

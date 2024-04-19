@@ -1,0 +1,669 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-04-19T02:38:23.4350975Z",
+  "analysisEndTime": "2024-04-19T02:38:33.0494684Z",
+  "stats": {
+    "summary": {
+      "projects": 4,
+      "issues": 5,
+      "incidents": 48,
+      "effort": 48
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 44,
+        "Optional": 2,
+        "Potential": 2,
+        "Information": 0
+      },
+      "category": {
+        "NuGet": 40,
+        "Project": 8
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+      "startingProject": true,
+      "issues": 5,
+      "storyPoints": 13,
+      "ruleInstances": [
+        {
+          "incidentId": "b6ae20b9-d59f-4754-ac15-263307fe2967",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "EnvDTE, 8.0.1",
+            "snippet": "EnvDTE, 8.0.1\n\nRecommendation:\n\nEnvDTE, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "f0f047dd-398a-470a-bc4d-5c39b000b86a",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "EnvDTE80, 8.0.1",
+            "snippet": "EnvDTE80, 8.0.1\n\nRecommendation:\n\nEnvDTE80, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "623ef9f6-533f-444f-b648-22a3d8bf4047",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.ComponentModelHost, 14.0.25424",
+            "snippet": "Microsoft.VisualStudio.ComponentModelHost, 14.0.25424\n\nRecommendation:\n\nMicrosoft.VisualStudio.ComponentModelHost, 17.9.187"
+          }
+        },
+        {
+          "incidentId": "48f51247-8649-4eab-b396-665ddd8d886a",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime, 14.3.25408",
+            "snippet": "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime, 14.3.25408\n\nRecommendation:\n\nMicrosoft.VisualStudio.Imaging.Interop.14.0.DesignTime, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "a7f880c9-7a32-43cd-bf42-688260bdd21c",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VSSDK.BuildTools, 15.7.109",
+            "snippet": "Microsoft.VSSDK.BuildTools, 15.7.109\n\nRecommendation:\n\nMicrosoft.VSSDK.BuildTools, 15.7.104"
+          }
+        },
+        {
+          "incidentId": "0ca29d2f-15e1-494c-b920-8e76e5a9f72c",
+          "ruleId": "NuGet.0002",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Newtonsoft.Json, 9.0.1",
+            "snippet": "Newtonsoft.Json, 9.0.1\n\nRecommendation:\n\nNewtonsoft.Json 13.0.3"
+          }
+        },
+        {
+          "incidentId": "e396b557-3694-4944-b619-1f59ba3eaed4",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "NuGet.VisualStudio, 4.7.0",
+            "snippet": "NuGet.VisualStudio, 4.7.0\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "5c7c87e5-5c4b-4517-a784-a23b4987df2d",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "stdole, 7.0.3301",
+            "snippet": "stdole, 7.0.3301\n\nRecommendation:\n\nstdole, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "b34189a5-a605-4264-b8ad-b2f109301b6f",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "VSSDK.DTE, 7.0.4",
+            "snippet": "VSSDK.DTE, 7.0.4\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "d773157a-782f-47e2-b55a-6fd619f002b0",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "VSSDK.TemplateWizardInterface, 12.0.4",
+            "snippet": "VSSDK.TemplateWizardInterface, 12.0.4\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "f380f286-f50e-4e6c-afc2-604e864e5221",
+          "ruleId": "NuGet.0004",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Newtonsoft.Json, 9.0.1",
+            "snippet": "Newtonsoft.Json, 9.0.1",
+            "links": [
+              {
+                "title": "https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+                "url": "https://github.com/advisories/GHSA-5crp-9r3c-p9vr"
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b10bc007-c832-408e-8aa0-26d6a1ac8f6b",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj"
+          }
+        },
+        {
+          "incidentId": "dd5206a9-ed1b-480b-83f1-54bbd57f1efe",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet\\PublishPackageToNuGet.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2015\\PublishPackageToNuGet2015.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "ruleInstances": [
+        {
+          "incidentId": "c6ef63a8-f336-4d1b-af8f-ffc4f37bfb60",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2015\\PublishPackageToNuGet2015.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2015\\PublishPackageToNuGet2015.csproj"
+          }
+        },
+        {
+          "incidentId": "3f69905b-5c7a-4121-8300-8df86b39647b",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2015\\PublishPackageToNuGet2015.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2015\\PublishPackageToNuGet2015.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+      "startingProject": true,
+      "issues": 5,
+      "storyPoints": 29,
+      "ruleInstances": [
+        {
+          "incidentId": "7d8ef684-0eaa-4274-af9d-ce30f0a63829",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "BR.ECS.Executor.Device.Infrastructure, 3.3.8857.11474",
+            "snippet": "BR.ECS.Executor.Device.Infrastructure, 3.3.8857.11474\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "afa0b515-6d31-4876-a6cc-68d599f4688f",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "BR.ECS.Executor.Device.Protocol.SerialPort, 3.3.8857.11474",
+            "snippet": "BR.ECS.Executor.Device.Protocol.SerialPort, 3.3.8857.11474\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "eecf48a5-bddb-4aee-8c35-493b89315915",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "BR.ECS.Executor.Device.Protocol.Socket, 3.3.8857.11474",
+            "snippet": "BR.ECS.Executor.Device.Protocol.Socket, 3.3.8857.11474\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "9757bb10-2396-48e3-870e-ef53442d0960",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "BR.ECS.Executor.Device.Services, 3.3.8857.11474",
+            "snippet": "BR.ECS.Executor.Device.Services, 3.3.8857.11474\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "bec1e3c8-4686-4f15-963f-01761d627868",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "BR.ECS.Executor.Device.Services.Contract, 3.3.8857.11474",
+            "snippet": "BR.ECS.Executor.Device.Services.Contract, 3.3.8857.11474\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "f6c1b9b2-0bd6-41e1-a2a4-6deee0456d02",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "EnvDTE, 8.0.1",
+            "snippet": "EnvDTE, 8.0.1\n\nRecommendation:\n\nEnvDTE, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "52c52b99-abe1-4677-a481-1ebd3a9cbf00",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "EnvDTE80, 8.0.1",
+            "snippet": "EnvDTE80, 8.0.1\n\nRecommendation:\n\nEnvDTE80, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "73df0679-5fa1-4bf9-83be-bcbbcbc660d5",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.ComponentModelHost, 14.0.25424",
+            "snippet": "Microsoft.VisualStudio.ComponentModelHost, 14.0.25424\n\nRecommendation:\n\nMicrosoft.VisualStudio.ComponentModelHost, 17.9.187"
+          }
+        },
+        {
+          "incidentId": "a6955a25-3e28-40e6-ad56-08735f1f1033",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.CoreUtility, 15.0.26228",
+            "snippet": "Microsoft.VisualStudio.CoreUtility, 15.0.26228\n\nRecommendation:\n\nMicrosoft.VisualStudio.CoreUtility, 17.9.187"
+          }
+        },
+        {
+          "incidentId": "de60487d-e85e-4403-936e-c49c49f6b7e3",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Imaging, 15.0.26228",
+            "snippet": "Microsoft.VisualStudio.Imaging, 15.0.26228\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "18f31b0e-3a2a-4635-9d1f-a09f2fd0ab14",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime, 14.3.25408",
+            "snippet": "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime, 14.3.25408\n\nRecommendation:\n\nMicrosoft.VisualStudio.Imaging.Interop.14.0.DesignTime, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "b886f47e-696d-4544-9a40-24043d83344c",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Shell.Framework, 15.0.26228",
+            "snippet": "Microsoft.VisualStudio.Shell.Framework, 15.0.26228\n\nRecommendation:\n\nMicrosoft.VisualStudio.Shell.Framework, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "5ec1e082-2ae7-4fd5-8fac-767a8851255f",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Shell.Interop, 7.10.6072",
+            "snippet": "Microsoft.VisualStudio.Shell.Interop, 7.10.6072\n\nRecommendation:\n\nMicrosoft.VisualStudio.Shell.Interop, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "fd098cec-6525-4503-bf38-bee03be5283b",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Shell.Interop.10.0, 10.0.30320",
+            "snippet": "Microsoft.VisualStudio.Shell.Interop.10.0, 10.0.30320\n\nRecommendation:\n\nMicrosoft.VisualStudio.Shell.Interop.10.0, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "ae6b403d-0e12-4819-b85a-abeecce85321",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Shell.Interop.11.0, 11.0.61031",
+            "snippet": "Microsoft.VisualStudio.Shell.Interop.11.0, 11.0.61031\n\nRecommendation:\n\nMicrosoft.VisualStudio.Shell.Interop.11.0, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "4902d35e-b484-4e9e-95b5-c14437bca351",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Shell.Interop.12.0, 12.0.30111",
+            "snippet": "Microsoft.VisualStudio.Shell.Interop.12.0, 12.0.30111\n\nRecommendation:\n\nMicrosoft.VisualStudio.Shell.Interop.12.0, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "df8cf6c7-d8d1-4033-9130-7a76e5a4a940",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Shell.Interop.8.0, 8.0.50728",
+            "snippet": "Microsoft.VisualStudio.Shell.Interop.8.0, 8.0.50728\n\nRecommendation:\n\nMicrosoft.VisualStudio.Shell.Interop.8.0, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "cfd14b68-41c8-46f6-a7c6-d96ee2daa507",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.TextManager.Interop, 7.10.6071",
+            "snippet": "Microsoft.VisualStudio.TextManager.Interop, 7.10.6071\n\nRecommendation:\n\nMicrosoft.VisualStudio.TextManager.Interop, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "6f6c0f14-0b2a-45bd-92ea-ca6bf2761cb4",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.TextManager.Interop.8.0, 8.0.50728",
+            "snippet": "Microsoft.VisualStudio.TextManager.Interop.8.0, 8.0.50728\n\nRecommendation:\n\nMicrosoft.VisualStudio.TextManager.Interop.8.0, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "4f1c29ff-4cce-41d5-91f0-2ae4d6bdb912",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.Utilities, 15.0.26228",
+            "snippet": "Microsoft.VisualStudio.Utilities, 15.0.26228\n\nRecommendation:\n\nMicrosoft.VisualStudio.Utilities, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "af336fb4-6222-4b62-b6ed-4c5554ac5c32",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VSSDK.BuildTools, 17.0.5232",
+            "snippet": "Microsoft.VSSDK.BuildTools, 17.0.5232\n\nRecommendation:\n\nMicrosoft.VSSDK.BuildTools, 15.7.104"
+          }
+        },
+        {
+          "incidentId": "bcef23e8-945a-45ad-a7ff-455e0cb70091",
+          "ruleId": "NuGet.0002",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Newtonsoft.Json, 13.0.1",
+            "snippet": "Newtonsoft.Json, 13.0.1\n\nRecommendation:\n\nNewtonsoft.Json 13.0.3"
+          }
+        },
+        {
+          "incidentId": "907cbc74-59f0-49b6-87a8-c1c3bd0a1557",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "NuGet.VisualStudio, 5.1.0",
+            "snippet": "NuGet.VisualStudio, 5.1.0\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "38371247-0b2c-4f74-a35e-77f294f3a337",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "stdole, 7.0.3301",
+            "snippet": "stdole, 7.0.3301\n\nRecommendation:\n\nstdole, 17.9.37000"
+          }
+        },
+        {
+          "incidentId": "f48aebe5-450c-4c33-b324-57a932101582",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "VSSDK.DTE, 7.0.4",
+            "snippet": "VSSDK.DTE, 7.0.4\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "9c572d35-78c9-4bf3-b744-5dd4f8e7446e",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "VSSDK.TemplateWizardInterface, 12.0.4",
+            "snippet": "VSSDK.TemplateWizardInterface, 12.0.4\n\nRecommendation:\n\nNo supported version found"
+          }
+        },
+        {
+          "incidentId": "93c8ec0c-9375-4395-8b6b-a1710bf86b6e",
+          "ruleId": "NuGet.0004",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "NuGet.Packaging, 6.7.0",
+            "snippet": "NuGet.Packaging, 6.7.0",
+            "links": [
+              {
+                "title": "https://github.com/advisories/GHSA-68w7-72jg-6qpp",
+                "url": "https://github.com/advisories/GHSA-68w7-72jg-6qpp"
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "01a0c081-54c0-4b11-85cb-6a0eb54aebc6",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj"
+          }
+        },
+        {
+          "incidentId": "475f6047-27fe-44e7-b834-df8e9b0ada53",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2017\\PublishPackageToNuGet2017.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2022\\PublishPackageToNuGet2022.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 4,
+      "ruleInstances": [
+        {
+          "incidentId": "4d0a5aab-f326-4c7b-a236-af9e4146b81b",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2022\\PublishPackageToNuGet2022.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VisualStudio.SDK, 17.0.0-previews-4-31709-430",
+            "snippet": "Microsoft.VisualStudio.SDK, 17.0.0-previews-4-31709-430\n\nRecommendation:\n\nMicrosoft.VisualStudio.SDK, 16.0.208"
+          }
+        },
+        {
+          "incidentId": "bcba40a3-4cd2-47f6-a9d3-705dd0ba91f9",
+          "ruleId": "NuGet.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2022\\PublishPackageToNuGet2022.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "Package",
+            "path": "Microsoft.VSSDK.BuildTools, 17.0.5232",
+            "snippet": "Microsoft.VSSDK.BuildTools, 17.0.5232\n\nRecommendation:\n\nMicrosoft.VSSDK.BuildTools, 15.7.104"
+          }
+        },
+        {
+          "incidentId": "cf8758b1-9cd6-4d50-a725-fb1b1c99666a",
+          "ruleId": "Project.0001",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2022\\PublishPackageToNuGet2022.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2022\\PublishPackageToNuGet2022.csproj"
+          }
+        },
+        {
+          "incidentId": "d323061d-b70b-4b2c-a09e-d277eda99aea",
+          "ruleId": "Project.0002",
+          "projectPath": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2022\\PublishPackageToNuGet2022.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "C:\\data\\Github\\PublishPackageToNuGetVsix\\PublishPackageToNuGetVsix\\PublishPackageToNuGet2022\\PublishPackageToNuGet2022.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529"
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530"
+        }
+      ]
+    },
+    "NuGet.0004": {
+      "id": "NuGet.0004",
+      "description": "NuGet package contains secutiry vulnerabilities.\n\nPackage needs to be upgraded to a newer version that addresses known secutity vunerabilities.",
+      "label": "NuGet package contains secutiry vulnerability",
+      "severity": "Optional",
+      "effort": 1
+    },
+    "Project.0001": {
+      "id": "Project.0001",
+      "description": "Project file needs to be converted to SDK style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227"
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226"
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to correspinding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in moderrn .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227"
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226"
+        }
+      ]
+    }
+  }
+}

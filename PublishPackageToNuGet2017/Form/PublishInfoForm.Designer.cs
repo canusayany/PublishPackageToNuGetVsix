@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel_PkgDependencyGroup = new System.Windows.Forms.Panel();
             this.btn_EditDependencies = new System.Windows.Forms.Button();
+            this.checkBox_IsPre = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnPublish
@@ -115,7 +116,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(11, 183);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.Size = new System.Drawing.Size(71, 12);
             this.label6.TabIndex = 39;
             this.label6.Text = "Description";
             // 
@@ -127,7 +128,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(41, 141);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 38;
             this.label5.Text = "Owners";
             // 
@@ -139,7 +140,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(35, 99);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(47, 12);
             this.label4.TabIndex = 37;
             this.label4.Text = "Authors";
             // 
@@ -151,7 +152,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(35, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(47, 12);
             this.label2.TabIndex = 36;
             this.label2.Text = "Version";
             // 
@@ -163,7 +164,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(65, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
+            this.label1.Size = new System.Drawing.Size(17, 12);
             this.label1.TabIndex = 35;
             this.label1.Text = "Id";
             // 
@@ -175,7 +176,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(11, 315);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.Size = new System.Drawing.Size(89, 12);
             this.label3.TabIndex = 46;
             this.label3.Text = "Dependencies：";
             // 
@@ -193,7 +194,7 @@
             // 
             // btn_EditDependencies
             // 
-            this.btn_EditDependencies.Location = new System.Drawing.Point(176, 278);
+            this.btn_EditDependencies.Location = new System.Drawing.Point(193, 278);
             this.btn_EditDependencies.Name = "btn_EditDependencies";
             this.btn_EditDependencies.Size = new System.Drawing.Size(190, 23);
             this.btn_EditDependencies.TabIndex = 48;
@@ -201,11 +202,23 @@
             this.btn_EditDependencies.UseVisualStyleBackColor = true;
             this.btn_EditDependencies.Click += new System.EventHandler(this.btn_EditDependencies_Click);
             // 
+            // checkBox_IsPre
+            // 
+            this.checkBox_IsPre.AutoSize = true;
+            this.checkBox_IsPre.Location = new System.Drawing.Point(456, 284);
+            this.checkBox_IsPre.Name = "checkBox_IsPre";
+            this.checkBox_IsPre.Size = new System.Drawing.Size(72, 16);
+            this.checkBox_IsPre.TabIndex = 49;
+            this.checkBox_IsPre.Text = "预发行版";
+            this.checkBox_IsPre.UseVisualStyleBackColor = true;
+            this.checkBox_IsPre.CheckedChanged += new System.EventHandler(this.checkBox_IsPre_CheckedChanged);
+            // 
             // PublishInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 457);
+            this.Controls.Add(this.checkBox_IsPre);
             this.Controls.Add(this.btn_EditDependencies);
             this.Controls.Add(this.panel_PkgDependencyGroup);
             this.Controls.Add(this.label3);
@@ -244,5 +257,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel_PkgDependencyGroup;
         private System.Windows.Forms.Button btn_EditDependencies;
+        private System.Windows.Forms.CheckBox checkBox_IsPre;
     }
 }

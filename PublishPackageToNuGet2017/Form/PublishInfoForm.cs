@@ -3,14 +3,13 @@ using NuGet.Packaging;
 using NuGet.Packaging.Core;
 using NuGet.Versioning;
 using PublishPackageToNuGet2017.Model;
+using PublishPackageToNuGet2017.NuGetHelper;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using PublishPackageToNuGet2017.NuGetHelper;
 
 namespace PublishPackageToNuGet2017.Form
 {
@@ -34,7 +33,7 @@ namespace PublishPackageToNuGet2017.Form
             txtAuthors.Text = _projModel.Author;
             txtOwners.Text = string.Join(",", _projModel.Owners);
             txtDesc.Text = _projModel.Desc;
-
+            orgVersion = _projModel.Version;
             refreshDepency();
         }
 
@@ -257,7 +256,18 @@ namespace PublishPackageToNuGet2017.Form
                 form.ShowDialog();
             }
         }
-
-      
+        string orgVersion = string.Empty;
+        private void checkBox_IsPre_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_IsPre.Checked)
+            {
+                //删除version最后一节,并将其加上-pre
+                txtVersion.Text = orgVersion.Substring(0, orgVersion.LastIndexOf('.')) + "-pre";
+            }
+            else
+            {
+                txtVersion.Text = orgVersion;
+            }
+        }
     }
 }

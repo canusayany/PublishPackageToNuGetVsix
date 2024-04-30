@@ -89,7 +89,6 @@ namespace PublishPackageToNuGet2017.Command
             OleMenuCommandService commandService = await package.GetServiceAsync((typeof(IMenuCommandService))) as OleMenuCommandService;
             Instance = new NuGetPkgPublish(package, commandService);
         }
-
         /// <summary>
         /// This function is the callback used to execute the command when the menu item is clicked.
         /// See the constructor to see how the menu item is associated with this function using
@@ -143,13 +142,14 @@ namespace PublishPackageToNuGet2017.Command
                     Tags = string.Empty,
                     Title = projModel.LibName,
                     Version = NuGetVersion.Parse("1.0.0.0"),
+                    
                 };
                 projModel.Author = settingInfo.Authour;
                 projModel.Owners = projModel.PackageInfo?.Owners ?? new List<string> { settingInfo.Authour };
                 var des = MakeupDesc(projModel.PackageInfo?.Description, projModel.ProjectPath);  //读取git 结合基础信息
                 projModel.Desc = des;
                 projModel.Version = !string.IsNullOrEmpty(GetAssemblyVersion(projModel.LibDebugPath + "\\" + projModel.LibName + ".dll")) ? GetAssemblyVersion(projModel.LibDebugPath + "\\" + projModel.LibName + ".dll"):(projModel.PackageInfo?.Version?.Version.ToString(4));
-
+               
                 // 判断包是否有依赖项组，若没有则根据当前项目情况自动添加
                 List<PackageDependencyGroup> groupsTmp = projModel.PackageInfo.DependencyGroups.ToList();
                 foreach (string targetVersion in projModel.NetFrameworkVersionList)

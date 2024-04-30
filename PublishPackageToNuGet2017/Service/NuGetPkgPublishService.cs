@@ -471,7 +471,7 @@ namespace PublishPackageToNuGet2017.Service
             {
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 process.StartInfo.FileName = "dotnet";
-                process.StartInfo.Arguments = $"nuget push {packagePath}  -k {apiKey} -s {source}";
+                process.StartInfo.Arguments = $"nuget push {packagePath}  -k \"{apiKey}\" -s {source}";
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.RedirectStandardOutput = true;
                 //不显示cmd对话框

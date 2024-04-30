@@ -205,7 +205,9 @@
             // checkBox_IsPre
             // 
             this.checkBox_IsPre.AutoSize = true;
-            this.checkBox_IsPre.Location = new System.Drawing.Point(456, 284);
+            this.checkBox_IsPre.Checked = true;
+            this.checkBox_IsPre.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_IsPre.Location = new System.Drawing.Point(447, 278);
             this.checkBox_IsPre.Name = "checkBox_IsPre";
             this.checkBox_IsPre.Size = new System.Drawing.Size(72, 16);
             this.checkBox_IsPre.TabIndex = 49;

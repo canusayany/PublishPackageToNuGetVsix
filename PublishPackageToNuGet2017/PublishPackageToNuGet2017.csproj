@@ -9,7 +9,7 @@
     </NuGetPackageImportStamp>
     <UseCodebase>true</UseCodebase>
     <TargetFrameworkProfile />
-    <AssemblyVersion>1.1.8886.14146</AssemblyVersion>
+    <AssemblyVersion>1.1.8886.14219</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>

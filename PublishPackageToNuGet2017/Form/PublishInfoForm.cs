@@ -29,11 +29,20 @@ namespace PublishPackageToNuGet2017.Form
             _projModel = projModel;
 
             txtId.Text = _projModel.LibName;
-            txtVersion.Text = _projModel.Version;
+           
             txtAuthors.Text = _projModel.Author;
             txtOwners.Text = string.Join(",", _projModel.Owners);
             txtDesc.Text = _projModel.Desc;
             orgVersion = _projModel.Version;
+            if (checkBox_IsPre.Checked)
+            {
+                //删除version最后一节,并将其加上-pre
+                txtVersion.Text = orgVersion.Substring(0, orgVersion.LastIndexOf('.')) + "-pre";
+            }
+            else
+            {
+                txtVersion.Text = orgVersion;
+            }
             refreshDepency();
         }
 

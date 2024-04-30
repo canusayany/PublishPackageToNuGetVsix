@@ -24,6 +24,7 @@ using System.Windows.Forms;
 using IAsyncServiceProvider = Microsoft.VisualStudio.Shell.IAsyncServiceProvider;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace PublishPackageToNuGet2017.Service
 {
@@ -456,8 +457,7 @@ namespace PublishPackageToNuGet2017.Service
                 return true;
             }
             catch (Exception e)
-            { // 打印出更多的错误信息
-                MessageBox.Show($"Error pushing to NuGet server: {e.Message}" + $"Stack trace: {e.StackTrace}");
+            { 
                 if (e.InnerException != null)
                 {
                     MessageBox.Show($"Inner exception: {e.InnerException.Message}" + $"Inner exception stack trace: {e.InnerException.StackTrace}");
@@ -471,16 +471,19 @@ namespace PublishPackageToNuGet2017.Service
             {
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 process.StartInfo.FileName = "dotnet";
-                process.StartInfo.Arguments = $"nuget push {packagePath}  -k \"{apiKey}\" -s {source}";
+                process.StartInfo.Arguments = $"nuget push {packagePath}  -k {apiKey.Trim()} -s \"{source.Trim()}\"";
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.RedirectStandardOutput = true;
                 //不显示cmd对话框
                 process.StartInfo.CreateNoWindow = true;
+                process.StartInfo.StandardOutputEncoding = Encoding.GetEncoding("UTF-8");
                 process.Start();
                 string output = process.StandardOutput.ReadToEnd();
                 process.WaitForExit();
                 if (process.ExitCode != 0)
-                {
+                {//打印输入指令
+                    //MessageBox.Show($"Failed to push NuGet package. input: {process.StartInfo.FileName} {process.StartInfo.Arguments}");
+                    //MessageBox.Show($"Failed to push NuGet package. Output: {output}");
                     throw new Exception($"Failed to push NuGet package. Output: {output}");
                 }
             });
